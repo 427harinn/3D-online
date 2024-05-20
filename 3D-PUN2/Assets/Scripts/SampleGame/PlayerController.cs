@@ -24,7 +24,7 @@ public class PlayerController : BasicPlayerController
         {
             Jump();
             Move();
-            CameraControll();
+            //CameraControll();
         }
     }
 

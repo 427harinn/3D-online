@@ -7,7 +7,7 @@ public class TestPlayerController : BasicPlayerController
 {
     private void Start()
     {
-        myCamera = Camera.main;
+        //myCamera = Camera.main;
         player_rg = GetComponent<Rigidbody>();
     }
 
@@ -17,7 +17,7 @@ public class TestPlayerController : BasicPlayerController
         if (IsStop) return;
         Jump();
         Move();
-        CameraControll();
+        //CameraControll();
     }
 
     public void SetIsStop(bool b)

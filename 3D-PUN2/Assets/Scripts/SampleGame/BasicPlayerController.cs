@@ -25,13 +25,11 @@ public class BasicPlayerController : MonoBehaviour
         movingDirecion = new Vector3(x, 0, z);
         movingDirecion.Normalize();
         movingVelocity = movingDirecion * speedMagnification;
-        Vector3 newPos = myCamera.transform.TransformVector(movingVelocity);
-        //Debug.Log(tmp);
 
-        //�ړ�
-        player_rg.velocity = new Vector3(newPos.x, player_rg.velocity.y, newPos.z);
+        // カメラの方向を考慮せずに移動
+        player_rg.velocity = new Vector3(movingVelocity.x, player_rg.velocity.y, movingVelocity.z);
     }
-
+    /*
     public void CameraControll()
     {
         //���_����
@@ -57,6 +55,7 @@ public class BasicPlayerController : MonoBehaviour
             lastMousePosition = Input.mousePosition;
         }
     }
+    */
 
     bool jumpNow;
     float jumpPower = 10; //調整必要 例850
