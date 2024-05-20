@@ -57,4 +57,27 @@ public class BasicPlayerController : MonoBehaviour
             lastMousePosition = Input.mousePosition;
         }
     }
+
+    bool jumpNow;
+    float jumpPower = 10; //調整必要 例850
+    private void OnCollisionEnter(Collision other)
+    {
+        if (jumpNow == true)
+        {
+            if (other.gameObject.CompareTag("Ground"))
+            {
+                jumpNow = false;
+            }
+        }
+    }
+
+    public void Jump()
+    {
+        if (jumpNow == true) return;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            player_rg.AddForce(transform.up * jumpPower, ForceMode.Impulse);
+            jumpNow = true;
+        }
+    }
 }

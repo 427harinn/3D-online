@@ -22,6 +22,7 @@ public class PlayerController : BasicPlayerController
 
         if (this.myPhotonView.IsMine)
         {
+            Jump();
             Move();
             CameraControll();
         }

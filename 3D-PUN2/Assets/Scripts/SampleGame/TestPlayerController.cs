@@ -15,7 +15,7 @@ public class TestPlayerController : BasicPlayerController
     void Update()
     {
         if (IsStop) return;
-
+        Jump();
         Move();
         CameraControll();
     }
