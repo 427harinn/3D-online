@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 1082377481139516875}
   - component: {fileID: -362968356996101382}
   - component: {fileID: -5345545349882848142}
+  - component: {fileID: -6684731656051304589}
   m_Layer: 6
   m_Name: GamePlayerAvatar
   m_TagString: NetworkPlayer
@@ -602,6 +603,18 @@ MonoBehaviour:
     normalBlendType: 0
     heightBlendType: 0
   wait: 3
+--- !u!114 &-6684731656051304589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533998850587475464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa83b879f9cba140a476e6e157494d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8177181469660100943
 GameObject:
   m_ObjectHideFlags: 0
