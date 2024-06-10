@@ -19,6 +19,6 @@ public class Finish : MonoBehaviour
 
         // Œo‰ßŠÔ‚ğ‹‚ß‚é
         time = unchecked(ServerTime.GetServerTime()) / 1000f;
-        Debug.Log(time);
+        //Debug.Log(time);
     }
 }
